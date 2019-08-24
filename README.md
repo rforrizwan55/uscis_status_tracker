@@ -1,12 +1,14 @@
+    # USCIS case Tracker
     This project was build accomplish the need for monitoring the status of the cases for the range provided. Currently the script is set to run every hour.
     
-    **Build project**
+    ## Build project
         go build uscis.ho
     
-    **Run**
+    ## Run
         ./uscis 
         
-    **Arugments**
+    ## Arugments
+    ```
         -center int
             wac = 0 & eac = 1; default:0
         -email string
@@ -17,8 +19,10 @@
             gmail password for sending and receiving status
         -start int
             start of the series; default:1919054100 (default 1919054100)
+    ```
 
-    **Sample output**
+    ## Sample output
+    ```
         Change in status for wac19190xxxxx - Case Was Approved -----> Fingerprint Review Was Completed
         Change in status for wac19190xxxxx - Case Was Received -----> Fingerprint Review Was Completed
         -----------SUMMARY at 2019-08-24 11:57:59.848445001 -0500 CDT m=+7276.894935229---------
@@ -45,3 +49,4 @@
         Date of Birth Was Updated - 1
         --------map size : 295---------
     -----------SUMMARY---------
+    ```
